@@ -3,6 +3,16 @@
 #include <cmath>
 #include <locale>
 using namespace std;
+void afficher_melange(Flacon const& f1, Flacon const& f2)
+{
+  cout << "Si je mélange " << endl;
+  cout << "\t\"" << f1 << "\"" << endl;
+  cout << "avec" << endl;
+  cout << "\t\"" << f2 << "\"" << endl;
+  cout << "j'obtiens :" << endl;
+  cout << "\t\"" << (f1 + f2) << "\"" << endl;
+}
+
 int main()
 {
   setlocale(LC_ALL,"");
